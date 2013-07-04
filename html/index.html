@@ -1,7 +1,24 @@
 <html>
-    <body>
-        <div>
-            Yay!
+    <head>
+        <script type="text/javascript">
+            function onLoad()
+            {
+                bridge.boo.connect(onboo);
+            }
+            function onboo()
+            {
+                alert("boo!");
+            }
+            function onClick1()
+            {
+                bridge.func1("Does this work?");
+            }
+        </script>
+    </head>
+    <body onload="onLoad();">
+        <div style="clear:both; text-align:center">
+            Hello World<br />
+            <button onclick="onClick1();">Button1</button><br />
         </div>
     </body>
 </html>

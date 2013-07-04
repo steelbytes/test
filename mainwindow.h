@@ -12,6 +12,9 @@ public:
 	MainWindow(QWidget *parent = 0);
 	~MainWindow();
 
+private slots:
+	void addJSObjects();
+
 private:
 	Ui::MainWindowClass ui;
 };
